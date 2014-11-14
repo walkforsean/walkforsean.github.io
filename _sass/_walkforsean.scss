@@ -1,0 +1,52 @@
+body {
+  background: #000 url('/img/background.jpg') top left repeat;
+  color: #fff;
+}
+
+.actions {
+  position: relative;
+
+  a {
+    display: block;
+  }
+}
+
+.actions-donate {
+  margin-bottom: 30px;
+}
+
+.coming-soon {
+  margin: 50px auto;
+  max-width: 880px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .coming-soon {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 600px) {
+  .actions-donate {
+    margin-top: -70px;
+    margin-bottom: 0;
+  }
+
+  .actions-facebook {
+    margin-left: -50px;
+  }
+
+  .actions {
+    padding: 70px 0;
+
+    a {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  .coming-soon {
+    margin: 200px auto;
+  }
+}
