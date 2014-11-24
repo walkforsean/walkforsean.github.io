@@ -3,6 +3,17 @@ body {
   color: #fff;
 }
 
+a {
+  color: #fff;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    color: #fff;
+  }
+}
+
 .actions {
   position: relative;
 
@@ -15,19 +26,112 @@ body {
   margin-bottom: 30px;
 }
 
-.coming-soon {
+.site-wrap {
   margin: 50px auto;
-  max-width: 880px;
+  max-width: 1100px;
   text-align: center;
   padding: 0 20px;
 }
 
+p.highlight {
+  background-color: transparent;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.header {
+  text-align: center;
+}
+
+.intro {
+  overflow: hidden;
+}
+
+.section {
+  margin: 70px 0 80px 0;
+}
+
+.inline-list,
+.walker-list {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: top;
+  }
+}
+
+
+.walker-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.site-footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 45px 0;
+
+  li {
+    vertical-align: middle;
+  }
+}
+
+.section-map {
+  display: none;
+}
+
+.closing {
+  font-size: 27px;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 900px) {
-  .coming-soon {
+  .site-wrap {
     padding: 0;
   }
 }
+
 @media screen and (min-width: 600px) {
+  .special-thanks {
+    margin-bottom: -45px;
+    padding-top: 80px;
+  }
+
+  .inner-section {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .section-map {
+    display: block;
+  }
+
+  .site-footer {
+    li {
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .intro {
+    text-align: left;
+
+    img {
+      float: right;
+      padding-left: 40px;
+    }
+  }
+
   .actions-donate {
     margin-top: -70px;
     margin-bottom: 0;
@@ -44,9 +148,5 @@ body {
       display: inline-block;
       vertical-align: top;
     }
-  }
-
-  .coming-soon {
-    margin: 200px auto;
   }
 }
